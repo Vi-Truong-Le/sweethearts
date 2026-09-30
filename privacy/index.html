@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sweethearts: Date Quiz — Privacy</title>
+<style>
+ :root{--bg:#180a1f;--panel:#2b1233;--text:#f6eef4;--muted:#c9a9c4;--accent:#ff6b9a;--border:#3d2145;}
+ @media (prefers-color-scheme: light){:root{--bg:#fff5f8;--panel:#ffffff;--text:#2a1723;--muted:#8a6b80;--accent:#ff6b9a;--border:#f3d9e4;}}
+ *{box-sizing:border-box}
+ body{margin:0;background:var(--bg);color:var(--text);font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+ .wrap{max-width:680px;margin:0 auto;padding:3.5rem 1.25rem 3rem}
+ .badge{display:inline-block;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);font-weight:800;margin-bottom:.6rem}
+ h1{font-size:1.95rem;margin:0 0 .4rem;line-height:1.2}
+ h2{font-size:1.2rem;margin:2rem 0 .5rem}
+ h3{font-size:1rem;margin:1.4rem 0 .4rem}
+ p,li{color:var(--text)} a{color:var(--accent)}
+ p.lead{color:var(--muted);margin:0 0 2rem}
+ .card{background:var(--panel);border:1px solid var(--border);border-radius:16px;overflow:hidden}
+ a.row{display:flex;align-items:center;justify-content:space-between;padding:1.05rem 1.25rem;color:var(--text);text-decoration:none;border-bottom:1px solid var(--border)}
+ a.row:last-child{border-bottom:none} a.row:hover{background:rgba(255,107,154,.1)}
+ .row .name{font-weight:700} .row .desc{display:block;font-weight:400;font-size:.85rem;color:var(--muted);margin-top:.15rem}
+ .content{background:var(--panel);border:1px solid var(--border);border-radius:16px;padding:1.5rem 1.5rem}
+ .content table{border-collapse:collapse;width:100%;margin:1rem 0} .content th,.content td{border:1px solid var(--border);padding:.5rem .7rem;text-align:left;font-size:.92rem}
+ .back{display:inline-block;margin-bottom:1.25rem;color:var(--muted);text-decoration:none;font-size:.9rem}
+ footer{margin-top:2.5rem;color:var(--muted);font-size:.83rem}
+</style></head><body><div class="wrap"><a class="back" href="../">&larr; Sweethearts: Date Quiz · Legal</a><div class="content"><h1 id="privacy-policy-sweethearts-date-quiz">Privacy Policy — Sweethearts: Date Quiz</h1>
+<p><strong>Effective date: October 1, 2026</strong>
+<strong>Publisher: Vi Truong Le</strong>
+<strong>Contact: tremainejerde8549@icloud.com</strong>
+<strong>App: Sweethearts: Date Quiz (com.vytruongle.sweethearts)</strong></p>
+<hr />
+<h2 id="overview">Overview</h2>
+<p>Sweethearts is a two-player quiz game for couples, played across two separate phones and connected by a
+one-time room code. This policy describes exactly what the app does and does not do with your information.
+It is written to match the app's actual behavior — not a generic template — based on the planned iOS build
+(<code>blueprint/IOS_PLAN.md</code>), which uses <strong>only</strong> Firebase Realtime Database and Firebase Anonymous
+Authentication. It does <strong>not</strong> include analytics, crash reporting, advertising, or attribution services.</p>
+<h2 id="what-we-collect">What we collect</h2>
+<ul>
+<li><strong>Display name.</strong> When you first open the app, you're asked for a name to show your partner during a
+  game (e.g. "Minh" or "Lan"). This is stored on your device and is included in the game session data sent
+  to Firebase so your partner's phone can show it. It is not a real-name requirement — you can use any name
+  you like, and you can change it at any time in Settings.</li>
+<li><strong>In-game answers.</strong> The answers you pick during a show (Host's 15 personal answers, Player's 15 guesses)
+  are sent to Firebase Realtime Database so the two phones in that session can stay in sync in real time.</li>
+<li><strong>An anonymous session identifier.</strong> The app signs in "anonymously" to Firebase on first launch, silently,
+  with no sign-up screen. This creates a random identifier used only to control who is allowed to write to
+  which part of a game session (e.g., only the Host can set the questions; only the Player can submit
+  answers). It is not linked to your name, email, or any other personal identity, and there is no password.</li>
+</ul>
+<p>We do <strong>not</strong> collect: your email address, your real name (unless you choose to type it as your display
+name), your phone number, your location, your contacts, photos, camera or microphone data, or any financial
+or health information. The app does not ask for any of these.</p>
+<h2 id="who-can-see-your-game-data">Who can see your game data</h2>
+<p>Only the two phones taking part in one specific game session — the Host and the Player who joined with that
+session's 6-digit room code. There is no public profile, no public feed, and no way for anyone else to browse
+game sessions; a session can only be read by a device that has that session's code, and a code stops
+allowing new joins the moment the show has started or ended.</p>
+<h2 id="how-your-data-is-transmitted-and-stored">How your data is transmitted and stored</h2>
+<ul>
+<li>All data sent to Firebase travels over an encrypted (HTTPS) connection.</li>
+<li>Firebase Realtime Database is operated by Google; see
+  <a href="https://policies.google.com/privacy">Google's Privacy Policy</a> and
+  <a href="https://firebase.google.com/terms/data-processing-terms">Firebase's data processing terms</a> for how Google
+  handles data it processes on our behalf.</li>
+<li>A finished or abandoned game session's summary (your score, the questions, both players' answers) is also
+  saved <strong>on your own device</strong> as your session history, so you can look back at past date nights. This local
+  history is not automatically deleted from Firebase's servers or synced elsewhere beyond the original two
+  participating devices.</li>
+</ul>
+<h2 id="your-choices">Your choices</h2>
+<ul>
+<li><strong>No account to delete.</strong> Because the app has no account system (no email/password, no sign-up), there is
+  no account-deletion flow to offer — there is no account to delete.</li>
+<li><strong>Clear your local history.</strong> You can delete your on-device game history at any time from Settings ▸
+  Delete History. This removes it from your device; it does not retroactively remove the record from your
+  former game partner's device, since that copy is theirs.</li>
+<li><strong>Change your display name</strong> at any time in Settings.</li>
+<li><strong>Stop using the app</strong> at any time by deleting it — this removes all on-device data immediately.</li>
+</ul>
+<h2 id="childrens-privacy">Children's privacy</h2>
+<p>Sweethearts is intended for couples and is not directed at children. We do not knowingly collect
+information from anyone under 13 (or the relevant minimum age in your region). If you believe a child has
+provided information through the app, contact us at the email above and we will address it.</p>
+<h2 id="third-party-services">Third-party services</h2>
+<p>The only third-party service used is <strong>Firebase</strong> (Google), for the real-time database and anonymous
+authentication described above. The app does not integrate any advertising network, analytics SDK, or
+attribution/tracking SDK. (If a future version adds any of these, this policy will be updated first, and the
+App Privacy label in App Store Connect will be updated to match before that version ships.)</p>
+<h2 id="changes-to-this-policy">Changes to this policy</h2>
+<p>If we make material changes to this policy, we'll update the effective date above and, where appropriate,
+note the change in the app's "What's New" release notes.</p>
+<h2 id="contact">Contact</h2>
+<p>Questions about this policy or your data: <strong>tremainejerde8549@icloud.com</strong></p></div></div></body></html>
